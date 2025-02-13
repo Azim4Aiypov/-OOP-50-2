@@ -9,7 +9,7 @@ class Heroes:
     def attack(self):
         print(f"{self.name} наносит удар!")
 
-class Archen(Heroes):
+class Archer(Heroes):
     def __init__(self, name, hp, arrows, precision):
         super().__init__(name, hp)
         self.arrows = arrows
@@ -31,7 +31,7 @@ class Archen(Heroes):
     def status(self):
         return (f"Герой {self.name}, здоровье {self.hp}, стрелы {self.arrows},"
                 f" точность {self.precision}")
-archer = Archen("Макото",100,1,1.1)
+archer = Archer("Макото",100,1,1.1)
 archer.action()
 archer.attack()
 archer.rest()
